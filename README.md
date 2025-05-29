@@ -1,66 +1,11 @@
-## Foundry
+## Whitelist DApp
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A minimal Ethereum decentralized application that allows users to register their wallet address to a whitelist. Built using Foundry, this project demonstrates how to create, test, and interact with a simple smart contract that manages whitelisted addresses on-chain.
 
-Foundry consists of:
+## Features
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- ✅ Add wallet addresses to an on-chain whitelist
+- 🔐 Prevent duplicate registrations
+- 🧪 Includes test suite using Forge
+- 🛠️ Built and deployed with Foundry tooling (Forge, Cast, Anvil)
+- 📁 Clean project structure with scripts, contracts, and tests
